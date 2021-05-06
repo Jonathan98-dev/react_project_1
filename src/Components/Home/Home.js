@@ -2,8 +2,8 @@ import "./homeStyle.scss";
 
 const Home = () => {
   return (
-    <div className="home">
-      <h2>HOMEPAGE</h2>
+    <div className="homeComponent">
+      <h1>HOMEPAGE</h1>
     </div>
   );
 };
