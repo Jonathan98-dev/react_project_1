@@ -3,7 +3,7 @@ import ProjectList from "../ProjectList/ProjectList";
 import "./homeStyle.scss";
 
 const Home = () => {
-  const [projects, setProjects] = useState([
+  const projects = [
     {
       title: "PLACEHOLDER",
       imgLink: "../../img/placeholder.jfif",
@@ -28,7 +28,7 @@ const Home = () => {
       projectLink: "",
       id: 4,
     },
-  ]);
+  ];
 
   return (
     <div className="homeComponent">
