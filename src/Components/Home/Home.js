@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ProjectList from "../ProjectList/ProjectList";
 import "./homeStyle.scss";
 
