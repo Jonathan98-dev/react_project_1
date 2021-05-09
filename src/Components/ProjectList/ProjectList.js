@@ -2,12 +2,13 @@ import React from "react";
 import "./projectList.scss";
 
 const ProjectList = ({ projects }) => {
+  console.log(projects);
   return (
     <div className="projectList">
       {projects.map((project) => (
         <a href="/#" className="projectCard" key={project.id}>
-          <h2>{project.title}</h2>
-          <img src={project.imgLink} alt="projectImage" />
+          <h2>{project.projectName}</h2>
+          <img src={project.projectImage} alt="projectImage" />
         </a>
       ))}
     </div>

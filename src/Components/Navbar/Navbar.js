@@ -2,9 +2,23 @@ import { useState } from "react";
 import "./navbarStyle.scss";
 
 const Navbar = () => {
+  let lightMode = true;
+  let bgColor = getComputedStyle(document.documentElement).getPropertyValue(
+    "--backgroundColor"
+  );
+
+  console.log(bgColor);
   const [lightmode, setLightmode] = useState("../../img/lightOn.png");
   const handleClick = () => {
-    setLightmode("../../img/lightOff.png");
+    if (lightMode) {
+      setLightmode("../../img/lightOff.png");
+      lightMode = !lightMode;
+      document.documentElement.style.setProperty("--backgroundColor", "black");
+    } else {
+      setLightmode("../../img/lightOn.png");
+      lightMode = !lightMode;
+      document.documentElement.style.setProperty("--backgroundColor", "white");
+    }
   };
 
   return (

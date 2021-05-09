@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "projectName": "PLACEHOLDER",
+      "projectDescription": "DESCRIPTION",
+      "projectLink": "/#",
+      "projectCreator": "Jonathan Aristides",
+      "projectImage": "img/placeholder.jfif",
+      "id": 1
+    },
+    {
+      "projectName": "PLACEHOLDER",
+      "projectDescription": "DESCRIPTION",
+      "projectLink": "/#",
+      "projectCreator": "Jonathan Aristides",
+      "projectImage": "./img/placeholder.jfif",
+      "id": 2
+    },
+    {
+      "projectName": "PLACEHOLDER",
+      "projectDescription": "DESCRIPTION",
+      "projectLink": "/#",
+      "projectCreator": "Jonathan Aristides",
+      "projectImage": "./img/placeholder.jfif",
+      "id": 3
+    },
+    {
+      "projectName": "PLACEHOLDER",
+      "projectDescription": "DESCRIPTION",
+      "projectLink": "/#",
+      "projectCreator": "Jonathan Aristides",
+      "projectImage": "./img/placeholder.jfif",
+      "id": 4
+    }
+  ]
+}

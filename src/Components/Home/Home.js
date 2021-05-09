@@ -1,37 +1,16 @@
+import { useEffect, useState } from "react";
+import useFetch from "../../Hooks/useFetch";
 import ProjectList from "../ProjectList/ProjectList";
 import "./homeStyle.scss";
 
 const Home = () => {
-  const projects = [
-    {
-      title: "PLACEHOLDER",
-      imgLink: "../../img/placeholder.jfif",
-      projectLink: "",
-      id: 1,
-    },
-    {
-      title: "PLACEHOLDER",
-      imgLink: "../../img/placeholder.jfif",
-      projectLink: "",
-      id: 2,
-    },
-    {
-      title: "PLACEHOLDER",
-      imgLink: "../../img/placeholder.jfif",
-      projectLink: "",
-      id: 3,
-    },
-    {
-      title: "PLACEHOLDER",
-      imgLink: "../../img/placeholder.jfif",
-      projectLink: "",
-      id: 4,
-    },
-  ];
+  const { data, isLoading, error } = useFetch("http://localhost:8000/projects");
 
   return (
     <div className="homeComponent">
-      <ProjectList projects={projects} />
+      {error && <div>{error}</div>}
+      {isLoading && <div>Loading...</div>}
+      {data && <ProjectList projects={data} />}
     </div>
   );
 };
