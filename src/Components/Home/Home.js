@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import useFetch from "../../Hooks/useFetch";
 import ProjectList from "../ProjectList/ProjectList";
 import "./homeStyle.scss";

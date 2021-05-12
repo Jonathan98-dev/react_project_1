@@ -11,7 +11,8 @@ const useFetch = (url) => {
    * making a get request to json-server api. useEffect runs only ones. catching an error
    */
   useEffect(() => {
-    fetch(url)
+    const abortCont = new AbortController();
+    fetch(url, { signal: abortCont.signal })
       .then((res) => {
         if (!res.ok) {
           throw Error("could not fetch data");
@@ -24,9 +25,15 @@ const useFetch = (url) => {
         setError(null);
       })
       .catch((err) => {
-        setError(err.message);
-        setIsLoading(false);
+        if (err.name === "AbortError") {
+          console.log("fetch aborted");
+        } else {
+          setError(err.message);
+          setIsLoading(false);
+        }
       });
+
+    return () => abortCont.abort();
   }, [url]);
   return { data, isLoading, error };
 };

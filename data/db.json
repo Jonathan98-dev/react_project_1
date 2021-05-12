@@ -1,36 +1,68 @@
 {
   "projects": [
     {
-      "projectName": "PLACEHOLDER",
-      "projectDescription": "DESCRIPTION",
-      "projectLink": "/#",
+      "projectName": "Simple card component",
+      "projectDescription": "A card component",
+      "projectLink": "https://jonathan98-dev.github.io/frontend-mentor-exercises/Stats-preview-card-component/index.html",
       "projectCreator": "Jonathan Aristides",
-      "projectImage": "img/placeholder.jfif",
+      "projectImage": "../img/card.png",
       "id": 1
     },
     {
       "projectName": "PLACEHOLDER",
       "projectDescription": "DESCRIPTION",
-      "projectLink": "/#",
+      "projectLink": "/",
       "projectCreator": "Jonathan Aristides",
-      "projectImage": "./img/placeholder.jfif",
+      "projectImage": "../img/placeholder.jfif",
       "id": 2
     },
     {
       "projectName": "PLACEHOLDER",
       "projectDescription": "DESCRIPTION",
-      "projectLink": "/#",
+      "projectLink": "/",
       "projectCreator": "Jonathan Aristides",
-      "projectImage": "./img/placeholder.jfif",
+      "projectImage": "../img/placeholder.jfif",
       "id": 3
     },
     {
       "projectName": "PLACEHOLDER",
       "projectDescription": "DESCRIPTION",
-      "projectLink": "/#",
+      "projectLink": "/",
       "projectCreator": "Jonathan Aristides",
-      "projectImage": "./img/placeholder.jfif",
+      "projectImage": "../img/placeholder.jfif",
       "id": 4
+    }
+  ],
+  "emails": [
+    {
+      "name": "name",
+      "message": "message",
+      "email": "email",
+      "id": 1
+    },
+    {
+      "name": "aasdad",
+      "message": "asdasd",
+      "email": "adads@asdasd",
+      "id": 2
+    },
+    {
+      "name": "asdasd",
+      "message": "asdasd",
+      "email": "asdasd@asdasd",
+      "id": 3
+    },
+    {
+      "name": "asdasd",
+      "message": "asdasd",
+      "email": "dadasd@asdasd",
+      "id": 4
+    },
+    {
+      "name": "asdasd",
+      "message": "asdaasdasd",
+      "email": "asdasd@asdasd",
+      "id": 5
     }
   ]
 }
