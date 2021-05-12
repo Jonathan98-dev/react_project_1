@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contactStyle.scss";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [isPending, setIsPending] = useState(false);
-  const history = useHistory();
+  // const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
